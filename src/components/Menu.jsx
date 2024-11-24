@@ -53,20 +53,22 @@ const Navbar = () => {
           <span className="inline-block w-6 h-6 text-center bg-white rounded-full font-semibold text-dark">3</span>
         </a>
       </div>
-      <a className="hidden xl:flex items-center px-12 border-l border-blue-200 font-semibold text-white" href="#">
+      <Link className="hidden xl:flex items-center px-12 border-l border-blue-200 font-semibold text-white" to="/login">
         <svg className="mr-3" width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M16.0006 16.3154C19.1303 16.3154 21.6673 13.799 21.6673 10.6948C21.6673 7.59064 19.1303 5.07422 16.0006 5.07422C12.871 5.07422 10.334 7.59064 10.334 10.6948C10.334 13.799 12.871 16.3154 16.0006 16.3154Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
           <path d="M24.4225 23.8963C23.6678 22.3507 22.4756 21.0445 20.9845 20.1298C19.4934 19.2151 17.7647 18.7295 15.9998 18.7295C14.2349 18.7295 12.5063 19.2151 11.0152 20.1298C9.52406 21.0445 8.33179 22.3507 7.57715 23.8963" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
         </svg>
         <span>Sign&nbsp;In</span>
-      </a>
-      <a className="xl:hidden flex mr-6 items-center text-white" href="#">
+      </Link>
+
+      <Link className="xl:hidden flex mr-6 items-center text-white" to="/login">
         <svg className="mr-3" width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M16.0006 16.3154C19.1303 16.3154 21.6673 13.799 21.6673 10.6948C21.6673 7.59064 19.1303 5.07422 16.0006 5.07422C12.871 5.07422 10.334 7.59064 10.334 10.6948C10.334 13.799 12.871 16.3154 16.0006 16.3154Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
           <path d="M24.4225 23.8963C23.6678 22.3507 22.4756 21.0445 20.9845 20.1298C19.4934 19.2151 17.7647 18.7295 15.9998 18.7295C14.2349 18.7295 12.5063 19.2151 11.0152 20.1298C9.52406 21.0445 8.33179 22.3507 7.57715 23.8963" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
         </svg>
         <span className="text-white">Sign&nbsp;In</span>
-      </a>
+      </Link>
+      
       <button className="xl:hidden flex mr-6 items-center text-white" onClick={handleMobileMenuToggle}>
         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 3.33333H20V6.66667H0V3.33333ZM0 8.33333H20V11.6667H0V8.33333ZM0 13.3333H20V16.6667H0V13.3333Z" fill="white"></path>
